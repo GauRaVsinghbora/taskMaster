@@ -82,7 +82,7 @@ export default function ViewTasks() {
     duration: 3000,
 
     style: {
-      background: "#000",
+      background: "#000000b5",
       color: "#fff",
       borderRadius: "18px",
       padding: "16px",
