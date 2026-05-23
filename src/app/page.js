@@ -16,7 +16,7 @@ export default function Home() {
           A clean, fast task dashboard built with Next.js and Supabase.
           Create, track, update, and delete tasks — all in one place.
         </p>
-        <div className="flex flex-col sm:flex-row min-[500px]:gap-4 justify-center">
+        <div className="flex flex-col sm:flex-row gap-2 min-[500px]:gap-4 justify-center">
           <Link
             href="/view-tasks"
             className="bg-black text-white font-semibold px-8 py-4 rounded-full hover:bg-gray-800 transition text-sm inline-block text-center"
