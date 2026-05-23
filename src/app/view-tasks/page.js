@@ -76,7 +76,35 @@ export default function ViewTasks() {
 
   return (
     <main className="bg-white text-black min-h-screen">
-      <Toaster position="top-right" />
+      <Toaster
+  position="top-center"
+  toastOptions={{
+    duration: 3000,
+
+    style: {
+      background: "#000",
+      color: "#fff",
+      borderRadius: "18px",
+      padding: "16px",
+      border: "1px solid #262626",
+      fontSize: "14px"
+    },
+
+    success: {
+      iconTheme: {
+        primary: "#22c55e",
+        secondary: "#fff"
+      }
+    },
+
+    error: {
+      iconTheme: {
+        primary: "#ef4444",
+        secondary: "#fff"
+      }
+    }
+  }}
+/>
 
       {/* HERO */}
       <section className="px-6 md:px-20 py-10 max-w-6xl mx-auto">

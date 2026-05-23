@@ -39,7 +39,35 @@ export default function Home() {
 
   return (
     <main className="bg-white text-black min-h-screen">
-      <Toaster position="top-right" />
+      <Toaster
+  position="top-center"
+  toastOptions={{
+    duration: 3000,
+
+    style: {
+      background: "#000",
+      color: "#fff",
+      borderRadius: "18px",
+      padding: "16px",
+      border: "1px solid #262626",
+      fontSize: "14px"
+    },
+
+    success: {
+      iconTheme: {
+        primary: "#22c55e",
+        secondary: "#fff"
+      }
+    },
+
+    error: {
+      iconTheme: {
+        primary: "#ef4444",
+        secondary: "#fff"
+      }
+    }
+  }}
+/>
 
       {/* FORM SECTION */}
       <section className="border-t border-gray-100 py-20 px-6 md:px-20">
